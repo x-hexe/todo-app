@@ -54,7 +54,7 @@ const Form = ({ handleForm, initialValues = {} }) => {
             }) => (
                 <FormBootstrap onSubmit={handleSubmit}>
                     <Row>
-                        <Col>
+                        <Col md={4} xs={12}>
                             <FormBootstrap.Group className="mb-3">
                                 <FormBootstrap.Label>Título</FormBootstrap.Label>
                                 <FormBootstrap.Control
@@ -69,7 +69,7 @@ const Form = ({ handleForm, initialValues = {} }) => {
                             </FormBootstrap.Group>
                             <p className="text-danger">{errors.title}</p>
                         </Col>
-                        <Col>
+                        <Col md={4} xs={12}>
                             <FormBootstrap.Label>Prioridad</FormBootstrap.Label>
                             <FormBootstrap.Select
                                 name="priority"
@@ -86,7 +86,7 @@ const Form = ({ handleForm, initialValues = {} }) => {
                             </FormBootstrap.Select>
                             <p className="text-danger">{errors.priority}</p>
                         </Col>
-                        <Col>
+                        <Col md={4} xs={12}>
                             <FormBootstrap.Label>Estado</FormBootstrap.Label>
                             <FormBootstrap.Select
                                 name="status"

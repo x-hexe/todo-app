@@ -36,7 +36,7 @@ const Filter = ({ filtersChange }) => {
         <>
             <h5 className="mt-4">Filtrar por</h5>
             <Row>
-                <Col>
+                <Col className="mt-2" md={6} xs={12}>
                     <Form.Label>
                         Prioridad
                     </Form.Label>
@@ -50,7 +50,7 @@ const Filter = ({ filtersChange }) => {
                         <option value={PRIORITY_LOW_ID}>{PRIORITY_LOW_TEXT}</option>
                     </Form.Select>
                 </Col>
-                <Col>
+                <Col className="mt-2" md={6} xs={12}>
                     <Form.Label>
                         Estado
                     </Form.Label>
@@ -173,10 +173,10 @@ const List = ({ handleFunction }) => {
         <Container>
             <Row>
                 <Col>
-                    <h1 className="mt-4 mb-4">Listado de tareas</h1>
+                    <h1 className="mt-4 mb-4" >Listado de tareas</h1>
                 </Col>
-                <Col md={{ span: 4, offset: 4 }}>
-                    <Button className="mt-4 mb-4" variant="primary" onClick={() => navigate('/new-todo')}>
+                <Col md={{ span: 4, offset: 4 }} xs={12} >
+                    <Button className="mt-md-4 mb-4" variant="primary" onClick={() => navigate('/new-todo')}>
                         Crear nueva tarea
                     </Button>
                 </Col>
