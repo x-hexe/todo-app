@@ -1,0 +1,12 @@
+export const STATUS_TO_DO_ID = '1';
+export const STATUS_TO_DO_TEXT = 'To do';
+export const STATUS_IN_PROGRESS_ID = '2';
+export const STATUS_IN_PROGRESS_TEXT = 'En curso';
+export const STATUS_DONE_ID = '3';
+export const STATUS_DONE_TEXT = 'Finalizado';
+export const PRIORITY_HIGH_ID = '1';
+export const PRIORITY_HIGH_TEXT = 'Alta';
+export const PRIORITY_MEDIUM_ID = '2';
+export const PRIORITY_MEDIUM_TEXT = 'Media';
+export const PRIORITY_LOW_ID = '3';
+export const PRIORITY_LOW_TEXT = 'Baja'
